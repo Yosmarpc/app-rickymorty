@@ -1,3 +1,17 @@
+/*import */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+}
+
+
 .App {
   text-align: center;
 }
@@ -32,7 +46,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.cicle {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Card:hover {
+  border: 4px solid white;
+}
+
+.Title {
+  font-size: 60px;
+  color: black;
+  font-weight: 900;
+
+}
+
+.Section {
+  background-image: url(https://rickandmortyapi.com/api/character/avatar/19.jpeg);
+  background-position: center center;
+  background-size: auto;
+  background-repeat: no-repeat;
+
 }
