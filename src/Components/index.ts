@@ -1,1 +1,3 @@
-export { default as Card } from './card/Card'
+export { default as Card } from './Card/Card'
+export * from './Layout'
+export * from './index'
