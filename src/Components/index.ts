@@ -1,3 +1,3 @@
-export { default as Card } from './Card/Card'
+export * from './Cards/CardComponent'
 export * from './Layout'
 export * from './index'
