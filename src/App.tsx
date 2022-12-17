@@ -6,7 +6,7 @@ function App () {
   return (
     <div>
       <Heander />
-      <section className='container-xl my-5 '>
+      <section className='container-xl my-4 '>
         <PagePrincipal />
       </section>
       <Footer />
