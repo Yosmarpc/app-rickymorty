@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Card, Placeholder } from 'react-bootstrap'
-import CardComponent from '../../Components/Card/Card'
+import CardComponent from '../../Components/card/Card'
 import { webApiService } from '../../Services/Index'
 export const _data: any = [1, 2, 3, 4, 5, 6]
 const PagePrincipal = () => {
