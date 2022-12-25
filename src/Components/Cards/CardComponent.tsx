@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 
-const CardComponent = ({ dataResult }: any) => {
+export const CardComponent = ({ dataResult }: any) => {
   return (
 
     <div className='row bg-while gy-3'>
@@ -32,8 +32,5 @@ const CardComponent = ({ dataResult }: any) => {
         </div>
       ))}
     </div>
-
   )
 }
-
-export default CardComponent
