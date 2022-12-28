@@ -7,7 +7,7 @@ export const CardComponent = ({ dataResult }: any) => {
 
     <div className='row bg-while gy-3'>
       {dataResult.map((row: any, i: number) => (
-        <div className='col-12 col-lg-3 ' key={i + 1}>
+        <div className='col-6 col-md-3 col-lg-3 ' key={i + 1}>
           <Card className='h-100 Card shadow p-2 mb-2 bg-body rounded'>
             <Card.Img variant='top' src={row.image} />
             <Card.Body>

@@ -9,7 +9,6 @@ export const PagesContextProvider = ({ children }: any) => {
   const loadData = async () => {
     setData({ ...data, loading: true })
     webApiService.getAllCharaters().then((response) => {
-      console.log('response', response)
       setData({ ...data, loading: false, dataResult: response.results, informations: response.info })
     })
   }
@@ -18,8 +17,6 @@ export const PagesContextProvider = ({ children }: any) => {
     loadData()
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-  console.log('data context', data)
 
   return (
     <PagesContext.Provider value={{

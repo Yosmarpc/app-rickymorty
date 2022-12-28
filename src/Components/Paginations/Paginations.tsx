@@ -20,8 +20,8 @@ const Paginations = () => {
   const _pagesPrevious: number = data.informations.prev !== null ? Number(data.informations.prev.split('=')[1]) : 0
   return (
     <div className='d-grid gap-2 d-md-flex justify-content-md-center sticky-top'>
-      <Button className='btn btn-primary' onClick={() => getPaginations(data.informations.prev)} disabled={data.informations.prev === null}>Anterior {_pagesPrevious > 0 && _pagesPrevious}</Button>
-      <Button className='btn btn-primary' onClick={() => getPaginations(data.informations.next)}>Siguiente {_pagesNext}</Button>
+      <Button className='btn btn-primary' onClick={() => getPaginations(data.informations.prev)} disabled={data.informations.prev === null}>Página Anterior {_pagesPrevious > 0 && _pagesPrevious}</Button>
+      <Button className='btn btn-primary' onClick={() => getPaginations(data.informations.next)}>Página Siguiente {_pagesNext}</Button>
     </div>
   )
 }

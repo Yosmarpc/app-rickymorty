@@ -4,12 +4,12 @@ import { usePagesContext } from '../../context/PageContext'
 const Footer = () => {
   const { data } = usePagesContext()
 
-  const _pages: number = data.informations.length > 0 ? Number(data.informations.next.split('=')[1]) : 0
   return (
     <section className='container-fluid'>
+
       <div className='d-grid gap-2 d-md-flex justify-content-center '>
         <h6 className='text-white'>Cantidad de Registro: {data.informations.count}</h6>
-        <h6 className='text-white'>Cantidad de Paginas: {_pages === 0 ? 1 : 0} de {data.informations.pages}</h6>
+        <h6 className='text-white'>Cantidad de Paginas: {data.informations.prev ? Number(data.informations.prev.split('=')[1]) : 1} de {data.informations.pages}</h6>
       </div>
       <div className='text-center fs-6 py-3 text-white'>
         by Yosmar Hinestroza
