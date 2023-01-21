@@ -1,8 +1,5 @@
 import axios from 'axios'
-
-export const urlBase = 'https://rickandmortyapi.com/api/'
-
-const headers = { 'Content-Type': 'application/json; charset=utf-8' }
+import { headers, urlBase } from '../Constants/constants'
 
 export const webApiService = {
   getAllCharaters: async () => {

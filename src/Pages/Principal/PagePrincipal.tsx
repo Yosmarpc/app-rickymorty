@@ -2,9 +2,9 @@ import React from 'react'
 import { Card, Placeholder } from 'react-bootstrap'
 import { CardComponent } from '../../Components'
 import Paginations from '../../Components/Paginations/Paginations'
+import { _data } from '../../Constants/constants'
 import { usePagesContext } from '../../context/PageContext'
 
-export const _data: any = [1, 2, 3, 4, 5, 6]
 const PagePrincipal = () => {
   const { data } = usePagesContext()
 
